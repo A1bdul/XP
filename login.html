@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows XP</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="img">
+            <img src="./assets/logo (1).png" alt="Logo do Windows XP" />
+            <h1>To begin, click your user name</h1>
+        </div>
+        <div class="line"></div>
+        <div class="users">
+            <section class="lucas" id="user" style="cursor: pointer;">
+                <div class="iconA"></div>
+                <div class="user">
+                    <h3>EZPZ</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="btn">
+            <button id="shut-down"> <img src="/assets/Group 2.png" alt=""> </button>
+            <p>Turn off computer</p>
+        </div>
+        <div class="informations">
+            <p>After you log on, you can add or change accounts</p>
+            <p>Just go to your Control Panel and click User Accounts</p>
+        </div>
+    </footer>
+    <script>
+        let parent = window.parent.document
+        document.getElementById('shut-down').addEventListener('click', () => {
+            window.close()
+        })
+        document.getElementById('user').addEventListener('click', () => {
+            iframe = document.createElement("iframe");
+            iframe.id = "desktop"
+            iframe.src = "desktop.html"
+            iframe.title = "Desktop"
+            parent.querySelector('#login').remove()
+
+            parent.querySelector("body").prepend(iframe);
+
+            iframe.onload = function () {
+                var meta = document.createElement('meta');
+                meta.name = "viewport";
+                meta.content = "width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no";
+                document.head.appendChild(meta);
+            }
+        });
+    </script>
+</body>
+
+</html>
