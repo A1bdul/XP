@@ -1,6 +1,10 @@
-let time = document.querySelector(".time")
+let time = document.querySelector(".time"), audio = new Audio('assets/Windows 7 Startup.mp3')
 time.innerHTML = new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true }).format(new Date())
 time.setAttribute("title", new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true, year: 'numeric', month: 'long', day: 'numeric' }).format(new Date()))
+
+window.addEventListener('load', () => {
+    audio.play()
+})
 
 let timeSetter = setInterval(() => {
     time.innerHTML = new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true }).format(new Date())
