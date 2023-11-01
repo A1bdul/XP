@@ -301,12 +301,6 @@ textarea {
 
 }
 
-@media (orientation: portrait) {
-    body {
-        background-image: url('desktop-bg-portrait.jpg');
-    }
-}
-
 @media screen and (max-width:825px) {
     .open-tab:nth-child(3) {
         display: none;
