@@ -330,6 +330,14 @@ textarea {
         background-image: url('2.gif');
     }
 
+    .sticky-note{
+        position: absolute;
+        top:0;
+        right: 10;
+        height: 100px;
+
+    }
+
     .tv {
         position: absolute;
         top: -70px;
