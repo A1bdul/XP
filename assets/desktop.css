@@ -333,7 +333,7 @@ textarea {
     .sticky-note{
         position: absolute;
         top:0;
-        right: 10;
+        right: 10px;
         height: 100px;
 
     }
@@ -367,6 +367,14 @@ textarea {
         top: 10%;
         right: 15%;
     }
+    .sticky-note{
+        position: absolute;
+        z-index:13;
+        bottom:10px;
+        right: 20px;
+        width:100px;
+    }
+
 }
 
 @media screen and (max-width:825px) {
