@@ -334,8 +334,10 @@ textarea {
         position: absolute;
         top:0;
         right: 10px;
-        height: 100px;
-
+    }
+    .sticky-note img {
+         width: 350px;
+        height:auto;
     }
 
     .tv {
@@ -374,8 +376,8 @@ textarea {
         left: 20px;
     }
     .sticky-note img{
-        width:  250px;
-        height: 250px;
+        width:  350px;
+        height: 350px;
     }
 
 }
