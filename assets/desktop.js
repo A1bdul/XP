@@ -4,6 +4,10 @@ time.setAttribute("title", new Intl.DateTimeFormat('en-IN', { hour: 'numeric', m
 
 window.addEventListener('load', () => {
     audio.play()
+    let iframe = document.querySelector('.b')
+    setTimeout(() => {
+        iframe.play()
+    }, 3000)
 })
 
 let timeSetter = setInterval(() => {

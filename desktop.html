@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name="viewport">
@@ -9,9 +10,6 @@
 
 <body>
     <div class="desktop">
-        <video id="background-video" autoplay loop muted poster="assets/9a8ea7c5-e911-4f48-a976-db495b9b0485.mov">
-            <source src="assets/9a8ea7c5-e911-4f48-a976-db495b9b0485.mov"
-            ></video>
         <div class="icon telegram">
             <img src="assets/telegram.png">
             <div class="icon-name">Telegram</div>
@@ -40,9 +38,20 @@
             <img src="assets/recycle.png">
             <div class="icon-name">Recycle Bin</div>
         </div>
+        <div class="tv">
+            <img src="http://honeypotmarketing.com/wp-content/uploads/OLD-SCHOOL-TV.png" alt="" />
+
+            <div class="video">
+                <video class="b" loop>
+                    <source src="assets/ezpz_video.mp4">
+                </video>
+
+            </div>
+        </div>
+
     </div>
 
-    <div class="window">
+    <div class="window minimized">
         <div class="title-bar">
             <div><img src="assets/notepad.png">About</div>
             <div class="controls">
@@ -65,13 +74,20 @@
         <div class="start-button"><img src="assets/logo.svg"> start</div>
 
         <div class="opened-tabs">
-            <div class="open-tab"><img src="assets/documents.png"> EZPZ</div>
-            <div class="open-tab readme active"><img src="assets/notepad.png"> About</div>
+            <div class="open-tab active"><img src="assets/documents.png"> EZPZ</div>
+            <div class="open-tab readme"><img src="assets/notepad.png"> About</div>
         </div>
 
         <div class="time">11:20 PM</div>
     </div>
 
     <script src="assets/desktop.js"></script>
+
+    <script>
+        setTimeout(() => {
+            
+        })
+    </script>
 </body>
+
 </html>
