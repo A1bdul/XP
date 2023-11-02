@@ -59,7 +59,7 @@ document.querySelector(".note-pad").ondblclick = function () {
     document.querySelector(".window").classList.remove("minimized")
 }
 
-document.querySelector("textarea").value = "Eins Zwei Polizei is a techno song made back in the 90s. It was played all over clubs in Europe back then. It is now a \"meme\" song with many using it on TikTok. \n \n<b>Disclaimer: </b> We are not anti-Semitic and we welcome all ages, races and religion to join us! This is just a parody for meme's sake. "
+document.querySelector("textarea").value = "Eins Zwei Polizei is a techno song made back in the 90s. It was played all over clubs in Europe back then. It is now a \"meme\" song with many using it on TikTok. \n \nDisclaimer: We are not anti-Semitic and we welcome all ages, races and religion to join us! This is just a parody for meme's sake. "
 
 
 dragWindow(document.querySelector(".window"));
