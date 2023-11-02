@@ -371,8 +371,9 @@ textarea {
         position: absolute;
         z-index:13;
         bottom:10px;
-        right: 20px;
+        left: 20px;
         width:100px;
+        height:auto;
     }
 
 }
