@@ -333,18 +333,19 @@ textarea {
     .tv {
         position: absolute;
         top: -50px;
-        right: 30%;
+        right: 33%;
     }
 
     .tv img {
-        width: 400px;
+        width: 500px;
     }
     .video{
-        top: 70px;
+        object-fit: cover;
+        top: 50px;
     }
     .b{
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 400px;
     }
 }
 
